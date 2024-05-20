@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar el Número :D</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e9b8cd;
+        }
+        .container {
+            text-align: center;
+            background: rgba(231, 113, 139, 0.692);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Adivinar el Número</h1>
+        <p class="message">Adivine el número (de 1 a 100):</p>
+        <input type="number" id="guessInput" min="1" max="100">
+        <button onclick="guessNumber()">Adivinar</button>
+        <p id="feedback"></p>
+        <p id="attempts"></p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
